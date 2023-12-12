@@ -1,0 +1,47 @@
+$primary-color: #54428E;
+$secondary-color: #8963BA;
+
+.todo{
+    display: flex;
+    background-color: $primary-color;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 1rem 0.5rem;
+    border-radius: 8px;
+    &:last-child{
+        border-bottom: none;
+    }
+    .todo__name{
+        margin: 0 10px;
+        font-weight: 700;
+        color: white;
+    }
+    .todo__actions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        //width: 100px;
+        .exclude{
+            border:2px solid color-mix(in srgb, #D62839 70%, #000 30%);
+            background-color: #D62839;
+            padding: 0.4rem 0.6rem;
+            border-radius: 20%;
+            color: #000;
+            cursor: pointer;
+            &:hover{
+                background-color: color-mix(in srgb, #D62839 90%, #000 10%);
+                transition: 0.3s;
+                transform: translateY(2px);
+            }
+        }
+    }
+    &.selected{
+        background-color: color-mix(in srgb, #fff 70%, $primary-color 50%);
+        >.todo__name{
+            text-decoration: line-through;
+        }
+    }
+}

@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Afacad';
+    @import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Afacad', sans-serif;
+}
+
+body{
+    background-color: #54428E;
+}
