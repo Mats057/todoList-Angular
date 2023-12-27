@@ -6,3 +6,4 @@ Segue abaixo um gif do funcionamento e a página de acesso:
 
 <a href="https://mats057.github.io/todoList-Angular/"><img src="./src/assets/todo-Test.gif" alt="Gif de funcionamento"></a>
 
+<a href="https://mats057.github.io/todoList-Angular/">Clique aqui ou na imagem para acessar</a>
