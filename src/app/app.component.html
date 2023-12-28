@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">To Do List</h1>
     <div class="addTodos">
-      <input type="text" [(ngModel)]="name" (keyup)="checkEnter($event)">
+      <input type="text" [(ngModel)]="name" (keyup)="checkEnter($event)" maxlength="75">
       <input type="submit" (click)="addTodo()">
     </div>
     <app-to-dos *ngFor="let todo of todoList; let id = index" [nameTodo]="todo.name" [done]="todo.done" [id]="id"></app-to-dos>

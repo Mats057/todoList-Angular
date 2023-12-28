@@ -16,7 +16,7 @@ export class TodoActionsService implements OnInit{
 
   addTodo(name:string){
     if(name == '' || name.trim().length == 0) {alert('Digite algo'); return};
-    if(name.length > 25) {alert('Máximo de 25 caracteres'); return};
+    if(name.length > 75) {alert('Máximo de 75 caracteres'); return};
     this.todoList.push({name: name, done: false});
     localStorage.setItem('todoList', JSON.stringify(this.todoList));
   }

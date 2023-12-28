@@ -17,6 +17,9 @@ $secondary-color: #8963BA;
         margin: 0 10px;
         font-weight: 700;
         color: white;
+        word-wrap: break-word;
+        width: 80%;
+        text-align: left;
     }
     .todo__actions{
         display: flex;
@@ -29,12 +32,14 @@ $secondary-color: #8963BA;
             background-color: #D62839;
             padding: 0.4rem 0.6rem;
             border-radius: 20%;
-            color: #000;
+            color: color-mix(in srgb, #D62839 30%, #000 70%);
             cursor: pointer;
             &:hover{
                 background-color: color-mix(in srgb, #D62839 90%, #000 10%);
                 transition: 0.3s;
+                color: color-mix(in srgb, #D62839 40%, #000 60%);
                 transform: translateY(2px);
+
             }
         }
     }
@@ -42,6 +47,17 @@ $secondary-color: #8963BA;
         background-color: color-mix(in srgb, #fff 70%, $primary-color 50%);
         >.todo__name{
             text-decoration: line-through;
+        }
+        >.todo__actions{
+            >.exclude{
+                border:2px solid color-mix(in srgb, #D62839 70%, #ffffff 30%);
+                background-color: color-mix(in srgb, #D62839 90%, #ffffff 10%);
+                color: color-mix(in srgb, #000000 70%, #ffffff 10%, #D62839 20%);
+                &:hover{
+                    background-color: #D62839;
+                    border:2px solid color-mix(in srgb, #D62839 90%, #ffffff 10%);
+                }
+            }
         }
     }
 }

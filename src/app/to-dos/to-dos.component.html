@@ -1,7 +1,9 @@
-<div class="todo" [ngClass]="{'selected': done}" (click)="toggleDone()">
-    <a class="todo__name">{{done?nameTodo+' 🗸':nameTodo}}</a>
-    <div class="todo__actions">
-        <input type="checkbox" name="check" #selected [checked]="done" hidden>
-        <button class="exclude" (click)="removeTodo()"><img src="/assets/trash-can-solid.svg" alt="Excluir Todo"></button>
-    </div>
+<div class="todo" [ngClass]="{ selected: done }" (click)="toggleDone()">
+  <a class="todo__name">{{ done ? nameTodo + " 🗸" : nameTodo }}</a>
+  <div class="todo__actions">
+    <input type="checkbox" name="check" #selected [checked]="done" hidden />
+    <button class="exclude" (click)="removeTodo()">
+      <i data-feather="trash-2" alt="Excluir Todo"></i>
+    </button>
+  </div>
 </div>
